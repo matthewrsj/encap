@@ -25,8 +25,7 @@ bite {{.Name}}!  "{{.Bite}}"
 `
 
 func Report(a animal.Animal) {
-	tp := reflect.TypeOf(a).String()
-	tp = strings.TrimPrefix(tp, "*animal.")
+	tp := strings.TrimPrefix(reflect.TypeOf(a).String(), "*animal.")
 	fmt.Printf("%s is a %s that can speak, eat, and bark!\n", a.Name(), tp)
 	t := template.Must(template.New("report").Parse(report))
 	err := t.Execute(os.Stdout, a)
