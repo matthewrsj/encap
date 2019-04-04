@@ -22,6 +22,9 @@ func (a *CommonAnimal) Age() int {
 	return a.age
 }
 
+// All the following functions will typically be overwritten by inheriting
+// objects, but exist so that CommonAnimal implements the Animal interface.
+
 func (a *CommonAnimal) Speak() string {
 	return "hi"
 }
