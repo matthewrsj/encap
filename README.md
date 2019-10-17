@@ -17,3 +17,5 @@ Print a report for 5 different types of animals
   when it eats, and "chew" when it bites.
 - Platypus that goes "quack quack" when it speaks, "slurp slurp" when it eats,
   and "smack smack" when it bites.
+
+Author: Matthew Johnson <mattrsjohnson@gmail.com>
